@@ -358,5 +358,17 @@ p {
     text-align: center;
     color: black;
   }
+.extra_content {
+    display: none;
+  }
+  #read_more {
+    display: block;
+  }
+}
+.read_more  {
+  display: none;
+}
 
+.show {
+   display: block!important;
 }
