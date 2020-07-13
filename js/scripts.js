@@ -1,37 +1,8 @@
-document.getElementById("read_more").addEventListener( 'click' , changeClass);
-
-function changeClass() {
-  var content = document.getElementById("extra_content");
-  var btn = document.getElementById("read_more");
-  content.classList.toggle('show');
-
-  if (content.classList.contains("show")) {
-      btn.innerHTML = "Show Less";
-  } else {
-      btn.innerHTML = "Show More";
-  }
-}
-
-// navbar scroll view
-// status: ongoing
-// var prevScrollpos = window.pageYOffset;
-// function nav_scroll() {
-//   var currentScrollPos = window.pageYOffset;
-//   if (prevScrollpos > currentScrollPos) {
-//     document.getElementById("navbar").style.top = "0";
-//   } else {
-//     document.getElementById("navbar").style.top = "-60px";
-//   }
-//   prevScrollpos = currentScrollPos;
-// }
-
 //button code
 //Get the button:
 mybutton = document.getElementById("myBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function go_top() {scrollFunction()
-};
+// When the user scrolls down 350px from the top of the document, show the button
 
 function scrollFunction() {
   if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
@@ -51,4 +22,32 @@ window.onscroll = function() {
   // nav_scroll();
   scrollFunction();
 }
+
+// status: ongoing
+// document.getElementById("read_more").addEventListener( 'click' , changeClass);
+// 
+// function changeClass() {
+//   var content = document.getElementById("extra_content");
+//   var btn = document.getElementById("read_more");
+//   content.classList.toggle('show');
+// 
+//   if (content.classList.contains("show")) {
+//       btn.innerHTML = "Show Less";
+//   } else {
+//       btn.innerHTML = "Show More";
+//   }
+// }
+
+// navbar scroll view
+// status: ongoing
+// var prevScrollpos = window.pageYOffset;
+// function nav_scroll() {
+//   var currentScrollPos = window.pageYOffset;
+//   if (prevScrollpos > currentScrollPos) {
+//     document.getElementById("navbar").style.top = "0";
+//   } else {
+//     document.getElementById("navbar").style.top = "-60px";
+//   }
+//   prevScrollpos = currentScrollPos;
+// }
 
