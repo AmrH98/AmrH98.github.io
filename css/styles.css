@@ -292,8 +292,13 @@ p {
   height: auto
 }
 #element1{
+  text-align: center;
+  margin-left: 30%;
+}
 
-  float: right;
+#element1_1{
+  text-align: center;
+  margin-left: 10%;
 }
 
 #element2{
