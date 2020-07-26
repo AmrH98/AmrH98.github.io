@@ -323,6 +323,16 @@ p {
   .parallax-window {
     background-attachment: inherit;
   }
+  #element1{
+    text-align: center;
+    margin-left: 0%;
+  }
+
+  #element1_1{
+    text-align: center;
+    margin-left: 10%;
+  }
+
 }
 
 @media screen and (max-width:749px) {
