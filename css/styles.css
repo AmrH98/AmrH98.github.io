@@ -346,7 +346,13 @@ p {
 
   }
   #element1{
-    float: none;
+  text-align: center;
+  margin-left: 0%;
+  }
+
+  #element1_1{
+    text-align: center;
+    margin-left: 10%;
   }
   .home-name {
     font-size: 3rem;
