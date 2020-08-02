@@ -249,7 +249,7 @@ p {
 .project-img{
   width: 70%;
   max-width: 100%;
-  height: 200px;
+  height: 180px;
   margin: 5%;
   border-radius: 10px
 }
@@ -280,11 +280,15 @@ p {
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
+  -webkit-transition-duration: 0.4s;
   display: inline-block;
+  transition-duration: 0.4s;
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+  overflow: hidden;
 }
+
 .btn:hover{
   background-color: #555;
 }
@@ -327,53 +331,63 @@ p {
   border-radius: 20px;
 }
 
-/* contact */
-
-.contact-head{
-  padding: 15%;
-  text-align: center;
-  color: black;
-}
-.contact-head a{
-  margin-bottom: 2%;
-}
-.btn-contact{
-  border-radius: 20px;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-  padding: 15px 32px;
-}
-
-
 @media only screen and (max-width:749px) {
   .parallax-window {
     background-attachment: inherit;
   }
-  #element1{
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    padding-left: 20px;
+    padding-bottom: 100px;
+  }
+  .grid-item {
+    /* padding: 30px; */
+    font-size: 50px;
     text-align: center;
-    margin-left: 0%;
+  }
+  .grid-item p{
+    text-decoration: none;
+    font-size: 10px;
+    width: auto;
+    text-align: center;
+  }
+  .card-proj {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 90%;
+    height: auto;
+    font-size: 70%;
   }
 
-  #element1_1{
-    text-align: center;
-    margin-left: 10%;
+  .project-img{
+    width: 50%;
+    max-width: 100%;
+    height: auto;
+    margin: 5%;
+    border-radius: 10px
   }
+  .extra_content {
+     display: none;
+   }
+   .btn-proj{
+     padding: 10%;
+     font-size: 90%;
+   }
+
+   #project-title{
+     text-align: center;
+     margin-top: 5%;
+   }
+   .project-img:hover {
+     width: 90%;
+     transition: width 3s ease-in-out;
+   }
 
 }
 
 @media screen and (max-width:749px) {
-  #elements{
-    display: block;
 
-  }
-  #element1{
-  text-align: center;
-  margin-left: 0%;
-  }
-
-  #element1_1{
-    text-align: center;
-    margin-left: 10%;
-  }
   .home-name {
     font-size: 3rem;
     float: inherit;
@@ -399,16 +413,26 @@ p {
     text-align: center;
     color: black;
   }
-.extra_content {
-    display: none;
-  }
-  #read_more {
-    display: block;
-  }
+
 }
-.read_more  {
-  display: none;
+
+/* contact */
+
+.contact-head{
+  padding: 15%;
+  text-align: center;
+  color: black;
 }
+.contact-head a{
+  margin-bottom: 2%;
+}
+.btn-contact{
+  border-radius: 20px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  padding: 15px 32px;
+}
+
+
 
 .show {
    display: block!important;
