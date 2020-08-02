@@ -115,51 +115,61 @@
     </div>
     </section>
 
-  <section id="projects">
-    <!-- adjust overall padding and inbetween and alignments -->
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-12">
-          <div class="projects-item" id="elements">
-            <!-- <div class="project-img" id="element1"> -->
-              <img class="d-block img-fluid project-img" src="img/cpp.png" alt="project">
-            <!-- </div> -->
-            <div class="project-description" id="element2">
-                <h3 class="mt-0">Libary Management System</h3>
-                <!-- change paragraph font-style -->
-                <p class="d-md-block d-none">  Manages and stores books information electronically,.
+    <section id="projects" class="projects-sec">
+      <!-- adjust overall padding and inbetween and alignments -->
+      <div class="container-fluid">
+        <div class="row">
+          <h1 id="project-title" class="col-12">Projects</h1>
+          <div class="col-12 grid-container">
+            <div class="card-proj card-border grid-item shown">
+              <img class="project-img" src="img/cpp.png" alt="project">
+                <div class=" container-card">
+                <h6>Libary Management System</h6>
+                <p id="extra_content" class="extra_content">  Manages and stores books information electronically,.
                      The system helps both students and library manager to keep a constant track
                       of all the books available in the library. It allows both the admin and the student to
                       search for the desired book efficiently.</p>
+                  </div>
             </div>
-          </div>
-          <div class="projects-item" id="elements">
-            <!-- <div class="project-img" id="element1"> -->
-              <!-- move right -->
-             <img src="img/ear.jpg" alt="project" class="d-block img-fluid project-img" id="element1">
-            <!-- </div> -->
-            <div class="project-description" id="element2">
-                <h3 class="mt-0">Compose Music Earsketch</h3>
-                <!-- change paragraph font-style -->
-                <p class="extra_content">  Create an Earsketch python program the generates a musical composition
-                And reads through written lists of musical clips.<br> ( Status: On going guitar AutoTuner plugin)</p>
-              <!-- <button id="read_more" class="read_more">Show More</button> -->
+
+            <div class="card-proj card-border grid-item shown">
+              <img class="project-img" src="img/tuner.jpg" alt="project">
+                <div class="container-card">
+                <h6>Guitar Tuner App</h6>
+                <p id="extra_content" class="extra_content">  An app that measures the frequencies produced by
+                  vibrating strings on an electric guitar or an acoustic guitar. It then aligns those measurements
+                  with notes in a scale. If the frequencies match a particular note, the tuner will display the name
+                  of that note, Ongoing ( Status: Ongoing guitar AutoTuner)</p>
+                  </div>
             </div>
-          </div>
-          <div class="projects-item" id="elements">
-            <!-- <div class="project-img" id="element1"> -->
-              <img src="img/tuner.jpg" alt="project" class="d-block img-fluid project-img" id="element1_1">
-            <!-- </div> -->
-            <div class="project-description" id="element2">
-                <h3 class="mt-0">Guitar Tuner</h3>
-                <!-- change paragraph font-style -->
-                <p class="d-md-block d-none">  Ongoing <br>( Status: Ongoing guitar AutoTuner )</p>
+
+            <div class="card-proj card-border grid-item shown">
+              <img class="project-img" src="img/weatherapp.png" alt="project">
+                <div class="container-card">
+                <h6>Weather Joural App</h6>
+                <p id="extra_content" class="extra_content">  Create an asynchronous web app that uses Web
+                  API and user data to dynamically update the UI, Check Weather Forecast using ZipCode</p>
+                  </div>
+                  <button class="btn-proj "type="button" name="button">Check it Out</button>
             </div>
+
+
+            <div class="card-proj card-border grid-item ">
+              <img class="project-img" src="img/ear.jpg" alt="project">
+                <div class="project-content container-card">
+                <h6>Compose Music Earsketch</h6>
+                <p id="extra_content" class="extra_content">  Create an Earsketch python program the generates a musical composition
+                And reads through written lists of musical clips.
+              (Status: On going guitar AutoTuner plugin)</p>
+                  </div>
+            </div>
+
+
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+
 
 
     <div id="contact" class="parallax-window" data-parallax="scroll" data-image-src="img/mini-profile-bg-02.jpg">
@@ -202,7 +212,7 @@
      integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
      <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
-    
+
 
   </body>
 

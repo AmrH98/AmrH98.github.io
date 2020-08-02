@@ -238,80 +238,95 @@ p {
 
 }
 
+
 /* projects */
 
-#projects {
-  padding-top: 80px;
-  padding-bottom: 80px;
+#project-title{
+  text-align: center;
+  margin: 2%;
 }
 
-.project-item {
-  /* display: flex; */
-  /* align-items: center; */
-  /* margin-bottom: 80px; */
-  float: left;
-  overflow: hidden;
-  margin-left: 20%;
-  margin-bottom: 3%
-
-}
-
-.project-img {
-  width: auto;
+.project-img{
+  width: 70%;
   max-width: 100%;
   height: 200px;
   margin: 5%;
-  display: flex;
-  /* align-items: center;
-  text-align: center; */
+  border-radius: 10px
 }
 
-.project-img img{
-  width: auto;
-  height: 220px;
-  border-radius: 5%;
+.project-img:hover {
+  width: 10%;
+  transition: width 3s ease-in-out;
 }
-#img-left{
-  float: right;
+
+
+.grid-container {
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  padding: 40px;
+  padding-left: 200px;
+  padding-bottom: 100px;
+}
+.grid-item {
+  padding: 30px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.btn-proj{
+  background-color: #e7e7e7; color: black;
+  border-radius: 20px;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
   display: inline-block;
-  width: 100%;
-  height: auto
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.btn:hover{
+  background-color: #555;
 }
 
-#img-right{
-  float: right;
-  display: inline;
-  width: 100%;
-  height: auto
+.shown{
+  display: block;
+
+}
+.hide{
+  display: none;
 }
 
-.project-description {
-  width: calc(100% - 330px);
-  padding: 20px 45px;
-  /* padding-left: 100px; */
-}
-/* divs */
-#elements{
-  display: flex;
-  width: 100%;
-  height: auto
-}
-#element1{
-  text-align: center;
-  margin-left: 30%;
-}
-
-#element1_1{
-  text-align: center;
-  margin-left: 10%;
-}
-
-#element2{
-  width: 50%;
+.card-proj {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 55%;
   height: auto;
-  margin-right: 2%;
-  margin-top: 7%
+  font-size: 70%;
 }
+
+.card-proj p{
+  font-size: 95%;
+}
+
+
+/* On mouse-over, add a deeper shadow */
+.card-proj:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container-card {
+  padding: 2px 16px;
+}
+
+.card-border{
+  margin: 20px;
+  padding: 20px;
+  border-radius: 20px;
+}
+
 /* contact */
 
 .contact-head{
