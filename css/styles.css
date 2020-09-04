@@ -263,9 +263,10 @@ p {
 
 .grid-container {
   display: inline-grid;
-  grid-template-columns: auto auto;
-  padding: 40px;
-  padding-left: 200px;
+  grid-template-columns: auto auto auto;
+  padding: 30px;
+  padding-left: 100px;
+  padding-right: 100px;
   padding-bottom: 100px;
 }
 .grid-item {
@@ -306,7 +307,7 @@ p {
   /* Add shadows to create the "card" effect */
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  width: 55%;
+  width: 75%;
   height: auto;
   font-size: 70%;
 }
@@ -332,7 +333,42 @@ p {
   border-radius: 20px;
 }
 
-
+@media screen and (max-width: 992px) {
+  .project-img{
+    width: 50%;
+    max-width: 100%;
+    height: 180px;
+    margin: 5%;
+    border-radius: 10px
+  }
+  .card-proj {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 105%;
+    height: auto;
+    font-size: 70%;
+  }
+  .grid-container {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    padding: 30px;
+    /* padding-left: 100px; */
+    padding-right: 100px;
+    padding-bottom: 100px;
+  }
+  .grid-item {
+    padding: 30px;
+    font-size: 30px;
+    text-align: center;
+  }
+  .grid-item p{
+    text-decoration: none;
+    font-size: 15px;
+    width: auto;
+    text-align: center;
+  }
+}
 @media only screen and (max-width:749px) {
   .parallax-window {
     background-attachment: inherit;
@@ -340,11 +376,11 @@ p {
   .grid-container {
     display: grid;
     grid-template-columns: auto;
-    padding-left: 20px;
-    padding-bottom: 100px;
+    padding-left: 60px;
+    /* padding-bottom: 100px; */
   }
   .grid-item {
-    /* padding: 30px; */
+    padding: 30px;
     font-size: 50px;
     text-align: center;
   }
@@ -357,8 +393,8 @@ p {
   .card-proj {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    width: 90%;
-    height: auto;
+    width: auto;
+    height: 90%;
     font-size: 70%;
   }
   .project-img{
